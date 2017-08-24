@@ -1,23 +1,136 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<title>Сайт-портфолио front-end разработчика</title>
 </head>
 <body>
-	<style>
-		body{
-			background: #f3efef;
-		}
+
+	<nav class="main-menu">
+		<ul class="main-menu__list">
+			<li class="main-menu__item"><a href="#" class="main-menu__link">Главная</a></li>
+			<li class="main-menu__item"><a href="#about" class="main-menu__link">Обо мне</a></li>
+			<li class="main-menu__item"><a href="#skills" class="main-menu__link">Навыки</a></li>
+			<li class="main-menu__item"><a href="#experience" class="main-menu__link">Опыт работы</a></li>
+			<li class="main-menu__item"><a href="#portfolio" class="main-menu__link">Портфолио</a></li>
+			<li class="main-menu__item"><a href="#contacts" class="main-menu__link">Контакты</a></li>
+		</ul>
+	</nav>
+
+	<div class="main" id="main">
+		<div class="container">
+			<div class="main__info">
+				<h1 class="main__name">Кольчевский Павел</h1>
+				<p class="main__profession">Front-end разработчик</p>
+			</div>
+		</div>
+	</div>
+
+	<section class="section about" id="about">
+		<div class="container">
+			<h2 class="section-title">Обо мне</h2>
+			<p class="about__content">Я занимаюсь front-end разработкой, потому что мне это нравится. Стараюсь все время совершенствовать свои подходы и искать лучшие, более простые и эффективные способы решения задач.</p>
+		</div>
+	</section>
+
+	<div class="section skills" id="skills">
+		<div class="container">
+			<h2 class="section-title">Мои знания и навыки</h2>
+
+			<div class="skills-scale">
+				<div class="skills-scale__item">
+					<div class="skills-scale__item-info">
+						<div class="skills-scale__item-title">HTML</div>
+						<div class="skills-scale__item-value">92%</div>
+					</div>
+					<div class="skills-scale__meter">
+						<div class="skills-scale__meter-fill skills-scale__meter-fill_html" style="width: 95%;"></div>
+					</div>
+				</div>
+
+				<div class="skills-scale__item">
+					<div class="skills-scale__item-info">
+						<div class="skills-scale__item-title">CSS</div>
+						<div class="skills-scale__item-value">96%</div>
+					</div>
+					<div class="skills-scale__meter">
+						<div class="skills-scale__meter-fill skills-scale__meter-fill_css" style="width: 96%;"></div>
+					</div>
+				</div>
+
+				<div class="skills-scale__item">
+					<div class="skills-scale__item-info">
+						<div class="skills-scale__item-title">JavaScript</div>
+						<div class="skills-scale__item-value">71%</div>
+					</div>
+					<div class="skills-scale__meter">
+						<div class="skills-scale__meter-fill skills-scale__meter-fill_js" style=" width: 71%;"></div>
+					</div>
+				</div>
+
+				<div class="skills-scale__item">
+					<div class="skills-scale__item-info">
+						<div class="skills-scale__item-title">jQuery</div>
+						<div class="skills-scale__item-value">80%</div>
+					</div>
+					<div class="skills-scale__meter">
+						<div class="skills-scale__meter-fill skills-scale__meter-fill_jquery" style="width: 80%;"></div>
+					</div>
+				</div>
+
+				<div class="skills-scale__item">
+					<div class="skills-scale__item-info">
+						<div class="skills-scale__item-title">AngularJS</div>
+						<div class="skills-scale__item-value">32%</div>
+					</div>
+					<div class="skills-scale__meter">
+						<div class="skills-scale__meter-fill skills-scale__meter-fill_angularjs" style="width: 32%;"></div>
+					</div>
+				</div>
+
+				<div class="skills-scale__item">
+					<div class="skills-scale__item-info">
+						<div class="skills-scale__item-title">PHP</div>
+						<div class="skills-scale__item-value">15%</div>
+					</div>
+					<div class="skills-scale__meter">
+						<div class="skills-scale__meter-fill skills-scale__meter-fill_php" style="width: 15%;"></div>
+					</div>
+				</div>
+			</div>
+
+			<p class="skills__additional">
+				Помимо вышеперечисленного уверенно владею CSS-препроцессорами (LESS, SCSS), сборщиками (Gulp, Grunt), СКВ git, CSS-фреймворками (Bootstrap), являюсь ярым приверженцем методологии БЭМ, имею опыт работы со множеством CMS (Wordpress, Joomla, Bitrix, Modx, Netcat, Drupal, Diafan). Понятия Progressive enhancement, Graceful degradation, Mobile first, Pixel perfect не являются для меня чуждыми. Современная верстка в моем понимании должна быть кроссбраузерной, семантичной и адаптивной одновременно.
+			</p>
+		</div>
+	</div>
 	
-		.heading{
-			text-align: center;
-			text-shadow: 2px 3px 4px #ccc;
-		}
-	</style>
-	
-	
-		<h1 class="heading">The project is on github pages now!</h1>
-	
+
+
+	<div class="section experience" id="experience">
+		<div class="container">
+			<h2 class="section-title">Опыт работы</h2>
+			<p style="text-align: center;">Раздел в разработке</p>
+		</div>
+	</div>
+
+	<div class="section portfolio" id="portfolio">
+		<div class="container">
+			<h2 class="section-title">Портфолио</h2>
+			<p style="text-align: center;">Раздел в разработке</p>
+		</div>
+	</div>
+
+	<div class="section contacts" id="contacts">
+		<div class="container">
+			<h2 class="section-title">Контакты</h2>
+			<p style="text-align: center;">Раздел в разработке</p>
+		</div>
+	</div>
+
+<!-- js plugins and libraries -->
+<script src="js/main.js"></script>
 </body>
 </html>
