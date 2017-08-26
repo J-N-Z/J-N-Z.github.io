@@ -368,28 +368,9 @@ html *:before,
 html *:after {
   box-sizing: inherit;
 }
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #515769;
-}
-.container {
-  width: 1170px;
-  margin: 0 auto;
-}
-.section {
-  padding: 30px 0;
-}
-.section-title {
-  margin: 0;
-  margin-bottom: 30px;
-  font-size: 40px;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-}
 .main {
-  background: #fafafa;
+  background-color: #fafafa;
+  background: url(../img/texture.jpg);
   display: flex;
   align-items: center;
   height: 100vh;
@@ -454,7 +435,7 @@ body {
 }
 .skills-scale {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 .skills-scale__item {
   margin-bottom: 30px;
@@ -499,6 +480,59 @@ body {
 .skills-scale__meter-fill_php {
   background: repeating-linear-gradient(45deg, #777bb3 0px, #777bb3 10px, #a8abce 10px, #a8abce 20px);
 }
+.contacts {
+  display: flex;
+}
+.contacts__item {
+  width: 33%;
+  padding: 0 10px;
+  text-align: center;
+}
+.contacts__item a {
+  text-decoration: none;
+  color: inherit;
+}
+.contacts__item-image {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-indent: -500px;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+.contacts__item-image_phone {
+  background: url(../img/smartphone.svg) center center no-repeat;
+}
+.contacts__item-image_mail {
+  background: url(../img/email.svg) center center no-repeat;
+}
+.contacts__item-image_skype {
+  background: url(../img/skype.svg) center center no-repeat;
+}
+.contacts__item:hover .contacts__item-image {
+  filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.4));
+  transform: translateY(-7px);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #515769;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.section {
+  padding: 40px 0;
+}
+.section-title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
 .numbers-section {
   background-color: #141519;
   background: linear-gradient(to top, #141519, #7d8089);
@@ -528,13 +562,58 @@ body {
 .statistics__item:hover .statistics__item-number {
   background: #e2e9ff;
   color: #3d3f49;
+  transform: scale(1.2);
 }
-.contacts {
+.portfolio-section {
+  background: linear-gradient(to right top, #f7f7f7, #e4e4e4);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.portfolio {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.contacts__item {
-  width: 33%;
-  padding: 0 10px;
-  text-align: center;
+.portfolio__item {
+  width: 30%;
+  height: 260px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+.portfolio__item:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.01);
+  transition: all 0.2s ease-out;
+}
+.portfolio__item:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  background: url(../img/magnifier.svg) center center no-repeat;
+  background-size: 50px 50px;
+  transition: opacity 0.4s ease-out;
+  transition: top 0.3s ease-out;
+  opacity: 0;
+}
+.portfolio__item:hover:before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.portfolio__item:hover:after {
+  top: 0;
+  opacity: 1;
+}
+.portfolio__item-image {
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

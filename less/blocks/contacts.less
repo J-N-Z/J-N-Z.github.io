@@ -1,0 +1,42 @@
+.contacts {
+    display: flex;
+
+    &__item {
+        width: 33%;
+        padding: 0 10px;
+        text-align: center;
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__item-image {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        text-indent: -500px;
+        overflow: hidden;
+        transition: all .3s ease-in;
+
+        &_phone {
+            background: url(../img/smartphone.svg) center center no-repeat;
+        }
+
+        &_mail {
+            background: url(../img/email.svg) center center no-repeat;
+        }
+
+        &_skype {
+            background: url(../img/skype.svg) center center no-repeat;
+        }
+    }
+}
+
+.contacts__item:hover {
+    .contacts__item-image {
+        filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.4));
+            transform: translateY(-7px);
+    }
+}

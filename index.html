@@ -13,7 +13,6 @@
 			<li class="main-menu__item"><a href="#" class="main-menu__link">Главная</a></li>
 			<li class="main-menu__item"><a href="#about" class="main-menu__link">Обо мне</a></li>
 			<li class="main-menu__item"><a href="#skills" class="main-menu__link">Навыки</a></li>
-			<li class="main-menu__item"><a href="#experience" class="main-menu__link">Опыт работы</a></li>
 			<li class="main-menu__item"><a href="#portfolio" class="main-menu__link">Портфолио</a></li>
 			<li class="main-menu__item"><a href="#numbers" class="main-menu__link">Цифры</a></li>
 			<li class="main-menu__item"><a href="#contacts" class="main-menu__link">Контакты</a></li>
@@ -103,31 +102,15 @@
 			</div>
 
 			<p class="skills__additional">
-				Помимо вышеперечисленного уверенно владею CSS-препроцессорами (LESS, SCSS), сборщиками (Gulp, Grunt), СКВ git, CSS-фреймворками (Bootstrap), являюсь ярым приверженцем методологии БЭМ, имею опыт работы со множеством CMS (Wordpress, Joomla, Bitrix, Modx, Netcat, Drupal, Diafan). Понятия Progressive enhancement, Graceful degradation, Mobile first, Pixel perfect не являются для меня чуждыми. Современная верстка в моем понимании должна быть кроссбраузерной, семантичной и адаптивной одновременно.
+				Помимо вышеперечисленного уверенно владею CSS-препроцессорами (LESS, SCSS), сборщиками (Gulp, Grunt), СКВ git, CSS-фреймворками (Bootstrap), являюсь ярым приверженцем методологии БЭМ, имею опыт работы со множеством CMS (Wordpress, Joomla, Bitrix, Modx, Netcat, Drupal, Diafan). Понятия Progressive enhancement, Graceful degradation, Mobile first, Pixel perfect не являются для меня чуждыми. Современная верстка в моем понимании должна быть валидной, кроссбраузерной, семантичной и адаптивной одновременно.
 			</p>
 		</div>
 	</div>
-	
 
-
-	<div class="section experience" id="experience">
-		<div class="container">
-			<h2 class="section-title">Опыт работы</h2>
-			<p style="text-align: center;">Раздел в разработке</p>
-		</div>
-	</div>
-
-	<div class="section portfolio" id="portfolio">
-		<div class="container">
-			<h2 class="section-title">Портфолио</h2>
-			<p style="text-align: center;">Раздел в разработке</p>
-		</div>
-	</div>
 
 	<div class="section numbers-section" id="numbers">
 		<div class="container">
-			<h2 class="section-title">Цифры</h2>
-			
+			<h2 class="section-title">Сухим языком цифр</h2>
 			<div class="statistics">
 				<div class="statistics__item">
 					<div class="statistics__item-number">2.5</div>
@@ -142,29 +125,74 @@
 					<p class="statistics__item-text">обучающих курса пройдено (в т.ч. htmlacademy, learn.javascript, geekbrains, codecademy)</p>
 				</div>
 			</div>
-
 		</div>
 	</div>
+
+
+	<div class="section portfolio-section" id="portfolio">
+		<div class="container">
+			<h2 class="section-title">Портфолио</h2>
+			<div class="portfolio">
+				<a href="https://tesser.ru/" target="_blank" class="portfolio__item">
+					<img src="img/tesser.jpg" alt="portfolio-image" class="portfolio__item-image">
+				</a>
+
+				<a href="https://min.events/" target="_blank" class="portfolio__item">
+					<img src="img/min.events.jpg" alt="portfolio-image" class="portfolio__item-image">
+				</a>
+
+				<a href="https://1cbit.ru/services/saas/" target="_blank" class="portfolio__item">
+					<img src="img/1bit.jpg" alt="portfolio-image" class="portfolio__item-image">
+				</a>
+
+				<a href="http://sport-iv.ru/landing/" target="_blank" class="portfolio__item">
+					<img src="img/sportiv.jpg" alt="portfolio-image" class="portfolio__item-image">
+				</a>
+
+				<a href="http://www.geneva56.ru/" target="_blank" class="portfolio__item">
+					<img src="img/geneva.jpg" alt="portfolio-image" class="portfolio__item-image">
+				</a>
+
+				<a href="http://badgoododd.ru/" target="_blank" class="portfolio__item">
+					<img src="img/badgoododd.jpg" alt="portfolio-image" class="portfolio__item-image">
+				</a>
+
+				<a href="http://sfera-bez.com/promovorota/" target="_blank" class="portfolio__item">
+					<img src="img/sfera.jpg" alt="portfolio-image" class="portfolio__item-image">
+				</a>
+			</div>
+		</div>
+	</div>
+
 
 	<div class="section contacts-section" id="contacts">
 		<div class="container">
 			<h2 class="section-title">Контакты</h2>
 			<div class="contacts">
 				<div class="contacts__item">
-					<div class="contacts__item-image">Телефон</div>
-					<p class="contacts__item-text">+7 (111) 111-11-11</p>
+					<a href="tel:+71111111111">
+						<div class="contacts__item-image contacts__item-image_phone">Телефон</div>
+						<p class="contacts__item-text">+7 (111) 111-11-11</p>
+					</a>
 				</div>
+
 				<div class="contacts__item">
-					<div class="contacts__item-image">Электронная почта</div>
-					<p class="contacts__item-text">pkolchevskiy@mail.ru</p>
+					<a href="mailto:pkolchevskiy@mail.ru">
+						<div class="contacts__item-image contacts__item-image_mail">Электронная почта</div>
+						<p class="contacts__item-text">pkolchevskiy@mail.ru</p>
+					</a>
 				</div>
+
 				<div class="contacts__item">
-					<div class="contacts__item-image">Skype</div>
-					<p class="contacts__item-text">jackson5475</p>
+					<a href="skype:jackson5475">
+						<div class="contacts__item-image contacts__item-image_skype">Skype</div>
+						<p class="contacts__item-text">jackson5475</p>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 <!-- js plugins and libraries -->
 <script src="js/main.js"></script>
