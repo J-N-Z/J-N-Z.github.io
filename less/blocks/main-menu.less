@@ -57,19 +57,20 @@
 }
 
 .main-menu__toggle {
-    display: block;
+    display: none;
     width: 35px;
     height: 30px;
     margin: 0 auto;
     background: #fff;
-    border: 2px solid #333;
+    border: 2px solid #515769;
     border-radius: 5px;
     outline: none;
 }
 
 .main-menu_active {
     .main-menu__toggle {
-        background: #333;
+        background: linear-gradient(to top left, #515769, #a9abaf);
+        border: 2px solid #fff;
     }
 
     .main-menu__toggle span,
@@ -82,7 +83,7 @@
 .main-menu__toggle span {
     height: 2px;
     width: 90%;
-    background: #333;
+    background: #515769;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -95,7 +96,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background: #333;
+        background: #515769;
     }
 
     &:before {
@@ -109,6 +110,10 @@
 
 
 @media screen and (max-width: 767px) {
+    .main-menu__toggle {
+        display: block;
+    }
+
     .main-menu__list {
         flex-wrap: wrap;
         display: none;
