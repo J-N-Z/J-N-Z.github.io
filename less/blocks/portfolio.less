@@ -4,7 +4,7 @@
 
     &__items {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
  
@@ -63,11 +63,17 @@
     }
 }
 
+@media screen and (max-width: 1156px) {
+    .portfolio__items {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .portfolio__item {
         width: 280px;
         height: 200px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
         &:before,
         &:after {
