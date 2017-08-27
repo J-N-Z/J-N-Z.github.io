@@ -4,18 +4,20 @@
 
     &__items {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
  
     &__item {
-        width: 30%;
+        width: 350px;
         height: 260px;
         margin-bottom: 30px;
         overflow: hidden;
         position: relative;
         border-radius: 5px;
-        box-shadow: 1px 1px 5px 2px rgba(0,0,0,.2);
+        box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
+        margin-left: 10px;
+        margin-right: 10px;
 
         &:before {
             content: "";
@@ -58,5 +60,13 @@
 
     &__item-image {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio__item {
+        width: 280px;
+        height: 200px;
+        margin-bottom: 15px;
     }
 }
