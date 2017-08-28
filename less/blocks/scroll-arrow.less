@@ -1,0 +1,35 @@
+.scroll-arrow {
+    display: block;
+    width: 40px;
+    height: 140px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/arrow-down.svg);
+        background-size: contain;
+        animation: 3s scroll-arrow infinite ease;
+    }
+}
+
+
+@keyframes scroll-arrow {
+    0% {
+        transform: translateY(0px)
+    }
+    25% {
+        transform: translateY(30px)
+    }
+    50% {
+        transform: translateY(60px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}

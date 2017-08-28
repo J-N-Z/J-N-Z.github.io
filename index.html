@@ -22,12 +22,14 @@
 	</nav>
 
 	<div class="main" id="main">
-		<div class="container">
+		<canvas class="main__canvas" id="main-canvas"></canvas>
+		<div class="container main__content">
 			<div class="main__info">
 				<h1 class="main__name">Кольчевский Павел</h1>
 				<p class="main__profession">Front-end разработчик</p>
 			</div>
 		</div>
+		<a href="#about" class="scroll-arrow"></a>
 	</div>
 
 	<section class="section about" id="about">
@@ -159,6 +161,10 @@
 					<img src="img/sfera-min.png" alt="portfolio-image" class="portfolio__item-image">
 				</a>
 
+				<a href="http://onenergysolutions.ca/" target="_blank" class="portfolio__item">
+					<img src="img/oes-min.png" alt="portfolio-image" class="portfolio__item-image">
+				</a>
+
 				<a href="http://www.geneva56.ru/" target="_blank" class="portfolio__item">
 					<img src="img/geneva-min.png" alt="portfolio-image" class="portfolio__item-image">
 				</a>
@@ -174,30 +180,40 @@
 				<div class="contacts__item">
 					<a href="tel:+79037197995">
 						<div class="contacts__item-image contacts__item-image_phone">Телефон</div>
-						<p class="contacts__item-text">+7 (903) 719-79-95</p>
 					</a>
+					<p class="contacts__item-text">+7 (903) 719-79-95</p>
 				</div>
 
 				<div class="contacts__item">
 					<a href="mailto:pkolchevskiy@mail.ru">
 						<div class="contacts__item-image contacts__item-image_mail">Электронная почта</div>
-						<p class="contacts__item-text">pkolchevskiy@mail.ru</p>
 					</a>
+					<p class="contacts__item-text">pkolchevskiy@mail.ru</p>
 				</div>
 
 				<div class="contacts__item">
 					<a href="skype:jackson5475">
 						<div class="contacts__item-image contacts__item-image_skype">Skype</div>
-						<p class="contacts__item-text">jackson5475</p>
 					</a>
+					<p class="contacts__item-text">jackson5475</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<footer class="section footer">
+		<div class="container">
+			<div class="footer__copyright">2017 &copy; Кольчевский Павел</div>
+		</div>
+	</footer>
+
 
 <!-- js plugins and libraries -->
 <script src="js/lib/jquery-3.2.1.min.js"></script>
+<script src="js/lib/TweenLite.min.js"></script>
+<script src="js/lib/EasePack.min.js"></script>
+<script src="js/lib/rAF.js"></script>
+<script src="js/lib/canvas-animation.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

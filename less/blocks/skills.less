@@ -1,4 +1,15 @@
 .skills {
     background: linear-gradient(to right top, #f7f7f7, #e4e4e4);
     box-shadow: 0 0 7px 1px rgba(0,0,0,0.2);
+
+    &__additional {
+        column-count: 2;
+        column-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skills__additional {
+        column-count: auto;
+    }
 }
