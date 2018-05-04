@@ -3,6 +3,7 @@
     var menu = $('.main-menu'),
         menuToggler = $('.main-menu__toggle'),
         menuList = $('.main-menu__list'),
+        $copyright = $('.js-copyright');
         $window = $(window);
 
     // adaptive menu
@@ -53,7 +54,8 @@
             });
         }
     });
-    
+
+    $copyright.html(new Date().getFullYear() + $copyright.html());
 
 
 })();
