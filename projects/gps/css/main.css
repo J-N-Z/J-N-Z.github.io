@@ -275,7 +275,7 @@
     -ms-flex-align: center;
         align-items: center; }
     .c-difference__list-item:not(:last-child) {
-      margin-bottom: 48px; }
+      margin-bottom: 60px; }
   .c-difference__list-item-number {
     display: -ms-flexbox;
     display: flex;
@@ -492,7 +492,7 @@
         -ms-user-select: none;
             user-select: none; }
   .c-slider__bar {
-    max-width: 515px;
+    width: 100%;
     margin-top: -2px;
     margin-left: -5px;
     position: relative;
