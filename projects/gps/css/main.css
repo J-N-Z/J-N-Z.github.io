@@ -827,4 +827,13 @@
   .c-popup__form-input {
     width: 100%;
     padding: 12px 10px 12px 18px;
-    margin-bottom: 17px; }
+    margin-bottom: 17px;
+    box-sizing: border-box; }
+
+@media screen and (max-width: 570px) {
+  .c-popup {
+    padding: 30px 15px; }
+    .c-popup .c-btn {
+      margin-top: 0; }
+  .c-popup__title {
+    font-size: 20px; } }
