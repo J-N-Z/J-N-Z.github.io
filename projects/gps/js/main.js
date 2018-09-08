@@ -69,7 +69,7 @@
     }
     
     function setPointPos(leftPos) {
-        let rightEdge = slider.offsetWidth;
+        let rightEdge = slider.offsetWidth - point.offsetWidth / 2;
     
       if (leftPos < 0) leftPos = 0;
       if (leftPos > rightEdge) leftPos = rightEdge;
